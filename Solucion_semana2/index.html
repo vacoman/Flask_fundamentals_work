@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <title>Subir csv</title>
+  </head>
+  <body style="overflow-x:hidden; overflow-y:hidden">
+      <h1 class="titulo"><i>Sube tu csv</i></h1>
+      <div class="container">
+        <div class="card">
+            <form action = "http://localhost:5000/uploader" method = "POST" 
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+        </div>
+    </div>
+    <div class="boton">
+        <input class="btn btn-success" type = "submit"/>
+    </div>
+</html>
